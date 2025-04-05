@@ -1,0 +1,63 @@
+#Packager: Dimitris Tzemos  <dijemos~at~gmail~dot~com>
+
+pkgname=fbpanel
+pkgver=7.2
+pkgrel=1dj
+source=("https://github.com/eleksir/fbpanel/archive/7.2/fbpanel-7.2.tar.gz" "fbpanel-addon.tar.gz" "disable-scroll.patch" "default-el" "default-en" "el_GR.UTF-8.po" "el_GR.UTF-8.mo")
+url=http://aanatoly.github.io/fbpanel/
+docs=('CHANGELOG.md' 'CREDITS' 'README.md' 'COPYING' 'INSTALL.md' 'TODO')
+
+doinst() {
+if ! [[ $(cat /etc/profile | grep FLAG) ]] ; then
+echo '' >> /etc/profile 
+echo '# Fbpanel FLAG' >> /etc/profile 
+echo 'if [[ "$(locale | grep LANG | cut -d= -f2 | cut -d. -f1)" == "el_GR" ]] ; then' >> /etc/profile
+echo ' if [ -f /etc/skel/.config/fbpanel/default-el ]; then' >> /etc/profile
+echo '	cp /etc/skel/.config/fbpanel/default-el ~/.config/fbpanel/default' >> /etc/profile
+echo ' fi' >> /etc/profile
+echo 'else' >> /etc/profile
+echo ' if [ -f /etc/skel/.config/fbpanel/default-en ]; then' >> /etc/profile
+echo '	cp /etc/skel/.config/fbpanel/default-en ~/.config/fbpanel/default' >> /etc/profile
+echo ' fi' >> /etc/profile
+echo 'fi' >> /etc/profile
+fi
+}
+
+
+slackdesc=\
+(
+#|-----handy-ruler------------------------------------------------------|
+"fbpanel (panel application)"
+"fbpanel is a lightweight GTK2-based panel for UNIX desktop, which" 
+"provides graphical information and feedback about desktop activity"
+"and allows interaction with the window manager. It features a" 
+"taskbar, pager, launchbar, show desktop, image viewer, clock, and" 
+"system tray."
+""
+"http://aanatoly.github.io/fbpanel/"
+)
+
+build() {
+	
+cd $SRC/$pkgname-$pkgver
+patch -p1 < $SRC/disable-scroll.patch || return 1
+cp $SRC/el_GR.UTF-8.po $SRC/$pkgname-$pkgver/po || return 1
+cp $SRC/el_GR.UTF-8.mo $SRC/$pkgname-$pkgver/po || return 1
+echo 'install(FILES "${PROJECT_SOURCE_DIR}/po/el_GR.UTF-8.mo" DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/locale/el/LC_MESSAGES" RENAME "${PROJECT_NAME}.mo")' \
+ >> $SRC/$pkgname-$pkgver/CMakeLists.txt || return 1
+ 
+mkdir -p build
+cd build
+  cmake \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_MANDIR=/usr/man \
+    -DCMAKE_BUILD_TYPE=Release ..
+  make || return 1
+  make install DESTDIR=$PKG || return 1
+cd ..
+
+tar xvf $SRC/fbpanel-addon.tar.gz -C $PKG/usr/lib${LIBDIRSUFFIX}/fbpanel/ || return 1
+
+chmod 755 $PKG/usr/lib${LIBDIRSUFFIX}/fbpanel/* || return 1
+}

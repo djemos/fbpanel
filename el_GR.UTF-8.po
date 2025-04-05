@@ -1,0 +1,225 @@
+# French translations for fbpanel package.
+# Copyright (C) 2010 THE fbpanel'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fbpanel package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fbpanel 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-25 02:07+0200\n"
+"PO-Revision-Date: 2025-04-05 00:36+0300\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
+"Language-Team: none\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#: panel/gconf_panel.c:57
+msgid "<b>Visual Effects</b>"
+msgstr "<b>Οπτικά εφέ</b>"
+
+#: panel/gconf_panel.c:65
+msgid "Transparency"
+msgstr "Διαφάνεια"
+
+#: panel/gconf_panel.c:69
+msgid "Color settings"
+msgstr "Ρυθμίσεις χρώματος"
+
+#: panel/gconf_panel.c:79
+msgid "Round corners"
+msgstr "Στρογγυλεμένες γωνίες"
+
+#: panel/gconf_panel.c:83
+msgid "Radius is "
+msgstr "Η ακτίνα είναι "
+
+#: panel/gconf_panel.c:87 panel/gconf_panel.c:101 panel/misc.c:89
+msgid "pixels"
+msgstr "εικονοστοιχεία"
+
+#: panel/gconf_panel.c:93
+msgid "Autohide"
+msgstr "Αυτόματη απόκρυψη"
+
+#: panel/gconf_panel.c:97
+msgid "Height when hidden is "
+msgstr "Το ύψος όταν είναι κρυφό είναι "
+
+#: panel/gconf_panel.c:106
+msgid "Max Element Height"
+msgstr "Μέγιστο ύψος στοιχείου"
+
+#: panel/gconf_panel.c:138
+msgid "<b>Properties</b>"
+msgstr "<b>Ιδιότητες</b>"
+
+#: panel/gconf_panel.c:146
+msgid "Do not cover by maximized windows"
+msgstr "Μην καλύπτετε από μεγιστοποιημένα παράθυρα"
+
+#: panel/gconf_panel.c:150
+msgid "Set 'Dock' type"
+msgstr "Ορίστε τον τύπο 'Dock'"
+
+#: panel/gconf_panel.c:155
+msgid "Set stacking layer"
+msgstr "Ορισμός στρώματος στοίβαξης"
+
+#: panel/gconf_panel.c:159
+msgid "Panel is "
+msgstr "Το πάνελ είναι "
+
+#: panel/gconf_panel.c:164
+msgid "all windows"
+msgstr "όλα τα παράθυρα"
+
+#: panel/gconf_panel.c:209
+msgid "<b>Geometry</b>"
+msgstr "<b>Γεωμετρία</b>"
+
+#: panel/gconf_panel.c:216
+msgid "Width"
+msgstr "Πλάτος"
+
+#: panel/gconf_panel.c:226
+msgid "Height"
+msgstr "Ύψος"
+
+#: panel/gconf_panel.c:231
+msgid "Edge"
+msgstr "Ακρη"
+
+#: panel/gconf_panel.c:236
+msgid "Allignment"
+msgstr "Ευθυγράμμιση"
+
+#: panel/gconf_panel.c:241
+msgid "Margin"
+msgstr "Περιθώριο"
+
+#: panel/gconf_panel.c:285
+#, c-format
+msgid ""
+"You're using '<b>%s</b>' profile, stored at\n"
+"<tt>%s</tt>"
+msgstr ""
+"Χρησιμοποιείτε το προφίλ '<b>%s</b>', αποθηκευμένο στο\n"
+"<tt>%s</tt>"
+
+#: panel/gconf_panel.c:388
+msgid "Panel"
+msgstr "Πίνακας"
+
+#: panel/gconf_panel.c:393
+msgid "Plugins"
+msgstr "Πρόσθετα"
+
+#: panel/gconf_panel.c:398
+msgid "Profile"
+msgstr "Προφίλ"
+
+#: panel/misc.c:75 panel/misc.c:81
+msgid "left"
+msgstr "αριστερά"
+
+#: panel/misc.c:76 panel/misc.c:82
+msgid "right"
+msgstr "δεξιά"
+
+#: panel/misc.c:77
+msgid "center"
+msgstr "κέντρο"
+
+#: panel/misc.c:83
+msgid "top"
+msgstr "κορυφή"
+
+#: panel/misc.c:84
+msgid "bottom"
+msgstr "κάτω μέρος"
+
+#: panel/misc.c:88
+msgid "dynamic"
+msgstr "δυναμικό"
+
+#: panel/misc.c:90
+#, c-format
+msgid " of screen"
+msgstr " εκτός οθόνης"
+
+#: panel/misc.c:94
+msgid "pixel"
+msgstr "εικονοκύτταρο"
+
+#: panel/misc.c:109
+msgid "above"
+msgstr "πάνω από"
+
+#: panel/misc.c:110
+msgid "below"
+msgstr "κάτω από"
+
+#: panel/panel.c:464
+msgid "translator-credits"
+msgstr "Dimitris Tzemos <dijemos@gmail.com>"
+
+#: plugins/menu/system_menu.c:24
+msgid "Audio & Video"
+msgstr "Ήχος & Βίντεο"
+
+#: plugins/menu/system_menu.c:25
+msgid "Education"
+msgstr "Εκπαίδευση"
+
+#: plugins/menu/system_menu.c:26
+msgid "Game"
+msgstr "Παιχνίδια"
+
+#: plugins/menu/system_menu.c:27
+msgid "Graphics"
+msgstr "Γραφικά"
+
+#: plugins/menu/system_menu.c:28
+msgid "Network"
+msgstr "Διαδίκτυο"
+
+#: plugins/menu/system_menu.c:29
+msgid "Office"
+msgstr "Γραφείο"
+
+#: plugins/menu/system_menu.c:30
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: plugins/menu/system_menu.c:31
+msgid "System"
+msgstr "Εργαλεία συστήματος"
+
+#: plugins/menu/system_menu.c:32
+msgid "Utilities"
+msgstr "Βοηθητικά προγράμματα"
+
+#: plugins/menu/system_menu.c:33
+msgid "Development"
+msgstr "Προγραμματισμός"
+
+#: plugins/taskbar/taskbar.c:1267
+msgid "Raise"
+msgstr "Αύξηση"
+
+#: plugins/taskbar/taskbar.c:1274
+msgid "Iconify"
+msgstr "Εικονοποιώ"
+
+#: data/config/default.in:149
+msgid "Lock Display"
+msgstr "Κλείδωμα οθόνης"
+
+#: data/config/default.in:154
+msgid "logout"
+msgstr "Έξοδος"
