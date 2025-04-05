@@ -30,3 +30,12 @@ sudo spkg fbpanel-7.2-x86_64-1dj.txz
 or for 32 bit:  
 sudo spkg fbpanel-7.2-i586-1dj.txz   
   
+
+![fbpanel-el](https://github.com/user-attachments/assets/a7cfa42b-4044-454d-8571-6946ae77f8f9)
+
+![fbpanel-en](https://github.com/user-attachments/assets/2dd8a085-3d3c-4661-8145-f78c4a431113)
+
+
+
+
+
