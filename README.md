@@ -1,4 +1,4 @@
-**fbpanel**  
+**fbpanel**   
 fbpanel is a lightweight GTK2-based panel for UNIX desktop,  
 which provides graphical information and feedback about desktop activity  
 and allows interaction with the window manager.  
