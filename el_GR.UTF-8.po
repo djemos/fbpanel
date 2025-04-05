@@ -1,4 +1,4 @@
-# French translations for fbpanel package.
+# Greek translations for fbpanel package.
 # Copyright (C) 2010 THE fbpanel'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the fbpanel package.
 # Automatically generated, 2010.
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fbpanel 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-25 02:07+0200\n"
-"PO-Revision-Date: 2025-04-05 00:36+0300\n"
+"PO-Revision-Date: 2025-04-05 21:58+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: none\n"
 "Language: el\n"
