@@ -10,7 +10,7 @@ To download and create the package type:
   
 mkdir build   
 cd build  
-git clone https://github.com/djemos/fbpanel.git  
+git clone https://github.com/djemos/fbpanel.git fbpanel-7.2   
   
 tar -czvf fbpanel-7.2.tar.gz fbpanel-7.2  
 mv fbpanel-7.2/SLKBUILD ./  
