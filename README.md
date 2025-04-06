@@ -19,7 +19,8 @@ mv fbpanel-7.2/el_GR.UTF-8.mo ./
 mv fbpanel-7.2/disable-scroll.patch ./  
 mv fbpanel-7.2/fbpanel-addon.tar.gz ./  
 mv fbpanel-7.2/default-en ./  
-mv fbpanel-7.2/default-el ./    
+mv fbpanel-7.2/default-el ./   
+
 fakeroot slkbuild -X  
   
 To install the package type:  
